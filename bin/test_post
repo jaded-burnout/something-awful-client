@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "rubygems"
+require "bundler/setup"
+Bundler.require(:default)
+
+require_relative "../lib/something_awful/client"
+
+SomethingAwful::Client.new(thread_id: "3765007").reply("Bep bop bep!")

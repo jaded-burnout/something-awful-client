@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "http"
+
 class WebClient
   LOGGED_OUT_TRIGGER_TEXT = "CLICK HERE TO REGISTER YOUR ACCOUNT"
   BASE_URL = "https://forums.somethingawful.com"

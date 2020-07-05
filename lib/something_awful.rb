@@ -1,4 +1,5 @@
 require "something_awful/version"
+require "something_awful/client"
 
 module SomethingAwful
   class Error < StandardError; end

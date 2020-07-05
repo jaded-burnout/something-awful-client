@@ -34,6 +34,12 @@ class WebClient
     end
   end
 
+  def fetch_profile(user_id:)
+    authenticated_request do |http|
+      http.get(BASE_URL + "/member.php?action=getinfo&userid=#{user_id}")
+    end
+  end
+
   def reply(text)
     raise "Cannot reply without a thread_id" unless thread_id
 

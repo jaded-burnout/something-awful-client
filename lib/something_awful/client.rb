@@ -11,6 +11,11 @@ class SomethingAwful::Client
       .fetch_json_url(url: MODS_AND_FORUMS_JSON_URL).fetch("forums")
   end
 
+  def self.fetch_profile(cookies_file_path, something_awful_id:)
+    WebClient.new(cookies_file_path: cookies_file_path)
+      .fetch_profile(user_id: something_awful_id)
+  end
+
   def initialize(thread_id:)
     @thread_id = thread_id
   end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    something-awful (0.1.0.0)
+    something_awful (0.1.0.0)
       http
       oga
 
@@ -81,7 +81,7 @@ DEPENDENCIES
   factory_bot
   rake
   rspec
-  something-awful!
+  something_awful!
   timecop
 
 BUNDLED WITH
